@@ -1,0 +1,10 @@
+CREATE DATABASE jjcstu_prof;
+use jjcstu_prof;
+CREATE TABLE users (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    email_id VARCHAR(30) NOT NULL,
+    Acc_status VARCHAR(10) NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
